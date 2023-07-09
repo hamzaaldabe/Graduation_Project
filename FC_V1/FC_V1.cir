@@ -1,0 +1,43 @@
+.title KiCad schematic
+C1_VIN1 /VIN GND 10uf
+U4 GND /5V_REG /VIN NCP1117-5.0_TO252
+C2_VIN1 /5V_REG GND 10uf
+C4_VDD1 /VDD GND 100nf
+C5_VDD1 /VDD GND 100nf
+R_RESET1 Net-_C1_RESET1-Pad1_ GND 10Kohm
+C1_RESET1 Net-_C1_RESET1-Pad1_ GND 0.1uf
+D3 GND Net-_D3-Pad2_ LED
+D2 GND Net-_D2-Pad2_ LED
+SW_RESET1 Net-_C1_RESET1-Pad1_ /RESET SW_Push
+R_LED1 Net-_D2-Pad2_ /LED1 1Kohm
+R_LED2 Net-_D3-Pad2_ /LED2 1Kohm
+C3_VDD1 /VDD GND 100nf
+C2_VCAP1 Net-_C2_VCAP1-Pad1_ GND 100nf
+J5 /M1 /M2 /M3 /M4 Conn_01x04_Male
+R3_USB1 /5V_USB Net-_R3_USB1-Pad2_ 10Kohm
+J4 /VDD /UART3_TX /UART3_RX GND Conn_01x04_Male
+J3 /VDD /UART2_TX /UART2_RX GND Conn_01x04_Male
+J2 /VDD /UART1_TX /UART1_RX GND Conn_01x04_Male
+C3_IMU1 /VDD GND 0.1uf
+C2_IMU1 Net-_C2_IMU1-Pad1_ GND 2.2uf
+U2 GND unconnected-_U2-Pad6_ unconnected-_U2-Pad7_ /IMU_CS unconnected-_U2-Pad9_ Net-_C1_IMU1-Pad1_ GND /IMU_INT /VDD GND Net-_C2_IMU1-Pad1_ /SCL_IMU /SDA_IMU MPU-6000
+C1_IMU1 Net-_C1_IMU1-Pad1_ GND 0.1uf
+C2_VDD1 /VDD GND 100nf
+C1_VDD1 /VDD GND 100nf
+D1 /5V_REG /5V_USB Net-_C1_VREG1-Pad1_ BAT54C
+C1_VREG1 Net-_C1_VREG1-Pad1_ GND 10uf
+C2_VREG1 /VDD GND 10uf
+U1 GND /VDD Net-_C1_VREG1-Pad1_ NCP1117-3.3_TO252
+R4_USB1 GND Net-_R3_USB1-Pad2_ 10Kohm
+C1_VCAP1 Net-_C1_VCAP1-Pad1_ GND 100nf
+Y1 Net-_U3-Pad5_ Net-_U3-Pad6_ GND 8MHZ
+U3 /VDD /OSD_SCL /OSD_DOUT /OSD_DIN Net-_U3-Pad5_ Net-_U3-Pad6_ /RESET unconnected-_U3-Pad8_ /BATV_PAD /RSSI_PAD /CURRENT_PAD GND /VDD /LED unconnected-_U3-Pad15_ /M4 /M1 GND /VDD /IMU_CS /SCL_IMU unconnected-_U3-Pad22_ /SDA_IMU /IMU_INT Net-_R3_USB1-Pad2_ /M2 /M3 /BOOT1 /UART2_TX /UART2_RX Net-_C1_VCAP1-Pad1_ /VDD unconnected-_U3-Pad33_ unconnected-_U3-Pad34_ unconnected-_U3-Pad35_ unconnected-_U3-Pad36_ /UART3_TX /UART3_RX unconnected-_U3-Pad39_ /PPM_IN /BUZZER /UART1_TX /UART1_RX /USBD- /USBD+ unconnected-_U3-Pad46_ Net-_C2_VCAP1-Pad1_ /VDD unconnected-_U3-Pad49_ unconnected-_U3-Pad50_ unconnected-_U3-Pad51_ unconnected-_U3-Pad52_ /CS_OSD unconnected-_U3-Pad54_ unconnected-_U3-Pad55_ /LED1 /LED2 unconnected-_U3-Pad58_ unconnected-_U3-Pad59_ /BOOT0 unconnected-_U3-Pad61_ unconnected-_U3-Pad62_ GND unconnected-_U3-Pad64_ STM32F415RGTx
+R_BOOT0 /BOOT0 GND 10Kohm
+R_BOOT1 /BOOT1 GND 10Kohm
+SW_BOOT1 /BOOT1 /VDD SW_Push
+SW_BOOT0 /BOOT0 /VDD SW_Push
+J1 /5V_USB /D- /D+ unconnected-_J1-Pad4_ GND unconnected-_J1-Pad6_ USB_B_Micro
+R2_USB1 /USBD- /D- 22ohm
+R1_USB1 /USBD+ /D+ 22ohm
+R1_IMU1 /VDD /IMU_CS 10Kohm
+.end
